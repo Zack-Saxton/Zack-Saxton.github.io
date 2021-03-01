@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebsiteHTML/CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="Images/logo1.png" alt="Logo image">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Phone</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Cart</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="Images/mobile.png" class="mobile" alt="mobile" style="max-width:100%;height:auto;">>
+            <div id="circle">
+                <div class="feature one">
+                    <img src="Images/camera.png" alt="camera">
+                    <div>
+                        <h1>Camera</h1>
+                        <p>12MP, Wide Angle Lens</p>
+                    </div>
+                </div>
+                <div class="feature two"><img src="Images/processor.png" alt="">
+                    <div>
+                        <h1>Processor</h1>
+                        <p>Snapdragon Octa-Core 11nm</p>
+                    </div>
+                </div>
+                <div class="feature three"><img src="Images/display.png" alt="">
+                    <div>
+                        <h1>Display</h1>
+                        <p>6.5" Mini Drop Fullscreen</p>
+                    </div>
+                </div>
+                <div class="feature four"><img src="Images/battery.png" alt="">
+                    <div>
+                        <h1>Battery Life</h1>
+                        <p>5000mAh, 720hrs Standby</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <img src="Images//arrow.png" id="upBtn"alt="arrow">
+            <h3>Features</h3>
+            <img src="Images//arrow.png" id="downBtn" alt="arrow">
+        </div>
+
+    </div>
+
+    <script>
+        var circle=document.getElementById("circle");
+        var upBtn=document.getElementById("upBtn");
+        var downBtn=document.getElementById("downBtn");
+
+        var rotateValue=circle.style.transform;
+        var rotateSum;
+
+        upBtn.onclick = function()
+        {
+            rotateSum=rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue=rotateSum;
+        }
+
+        downBtn.onclick = function()
+        {
+            rotateSum=rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue=rotateSum;
+        }
+    </script>
+
+</body>
+
+</html>

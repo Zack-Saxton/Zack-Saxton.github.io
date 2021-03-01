@@ -1,0 +1,37 @@
+.s5{
+    background:grey;
+    
+  }
+  .resumePuzzle{
+      display: flex;
+  }
+.resumePuzzle img{
+    height: 100vh;
+    width: auto;
+ 
+}
+
+#resRef{
+    height: 30vh;
+    width: auto;
+    float: left;
+    align-self:flex-end;
+}
+#resAbout{
+    height: 70vh;
+    width: auto;
+}
+.refAbout{
+    
+}
+/* .heading{
+    display: flex;
+    font-size: 160px;
+    text-align:start;
+    
+  float: left;
+  margin-left: -100px;
+  margin-top: 226px;
+  transform: rotate(-90deg) scale(1, 1);
+  letter-spacing: 1.5rem;
+  } */

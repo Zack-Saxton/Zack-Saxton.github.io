@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Nunito', sans-serif;;
+    line-height: 1.5;
+
+}
+a {
+    text-decoration: none;
+    color: blueÏ;
+}
+h1 {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.main {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: center;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("cover.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0 ;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+}
+
+.content {
+    color: white;
+    z-index: 3;
+    text-align: center;
+}
+.click {
+    margin-top: 25px;
+    padding: 10px 30px;
+    background: #4b5163;
+    display: inline-block;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+    font-size: 20px;
+    opacity: .8;
+}
+.click:hover {
+    transform: scale(.95);
+}
+#about {
+    padding: 50px;
+    text-align: center;
+    background: #131313;
+    background: -webkit-linear-gradient(top, #131313, #E6E6E6);
+    background: -moz-linear-gradient(top, #131313, #E6E6E6);
+    background: linear-gradient(to bottom, #131313, #E6E6E6);
+}
+
+#about p {
+font-size: 20px;
+margin: auto;
+max-width: 500px;
+
+}
+#about h1{
+    color: #f0ffff;
+}
+#about h2{
+    margin: 40px 0;
+    color: #131313;
+}
+i{
+    font-size: 48px;
+    margin: 0 5px;
+    color: #131313;
+}
+i:hover{
+    color: blue;
+    transform: scale(.95);
+}
